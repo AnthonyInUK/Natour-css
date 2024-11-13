@@ -1,0 +1,18 @@
+/* Error: Missing element $blue.
+ *    ,
+ * 51 |         text-shadow: .5rem 1rem 2rem rgba($color-black .2);
+ *    |                                      ^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass/base/_typography.scss 51:38  @import
+ *   sass/main.scss 7:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing element $blue.\a    \2577 \a 51 \2502          text-shadow: .5rem 1rem 2rem rgba($color-black .2);\a    \2502                                       ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass/base/_typography.scss 51:38  @import\a   sass/main.scss 7:9                root stylesheet";
+}
